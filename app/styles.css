@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body{
+    font: 400 14px Roboto,sans-serif;
+    background: #f0f0f5;
+    -webkit-font-smoothing:antialiased;
+    color: #696868;
+}
+
+.container{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .header-container{
+    height: 100%;
+    width: 80%;
+    max-height: 800px;
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+    margin-bottom: 200px;
+}
+
+.container .header-container .text-container{
+    width: 100%;
+    max-width: 680px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.container .header-container .text-container p{
+    line-height: 24px;
+    font-size: 28px;
+}
+.container .header-container .text-container .button{
+    margin-top: 25px;
+    padding: 20px;
+    border: 1px solid #11520b;
+    color: #11520b;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.container .header-container img{
+    width: 100%;
+    max-width: 800px;
+}
+
+.container .print-container{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.container .print-container .print-section{
+    display: flex;
+    justify-content: space-between;
+    
+    margin-bottom: 100px;
+}
+.container .print-container .print-section img{
+    margin-left: 50px;
+    max-height: 500px;
+}
+.container .print-container .print-section .text-container{
+    width: 100%;
+    max-width: 680px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container .print-container .print-section .text-container p{
+    line-height: 24px;
+    font-size: 20px;
+}
+
+.container .ficha-tecnica{
+    border-top: 1px solid #79797e;
+    width: 80%;
+    text-align: center;
+}
+
+.title{
+    font-size: 36px;
+    margin-top: 15px;
+}
+
+.container .ficha-tecnica p{
+    margin-top: 20px;
+    line-height: 36px;
+    font-size: 26px;
+    color: #505052;
+}
+
+.container .ficha-tecnica h2{
+    margin: 30px;
+}
+
+.telas{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.telas img{
+    height: 450px;  
+}
+
+.componentes{
+    margin-top: 75px;
+    display: flex;
+}
+
+.quiz4{
+    display: flex;
+}
+
+.quiz4 img{
+    height: 450px;
+}
+.resultado{
+    margin-top: 75px    ;
+    display: flex;
+    justify-content: space-around;
+}
+.resultado img:first-child{
+    height: 500px;
+}
+
+@media only screen and (max-width:600px){
+    .header-container{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .print-section{
+        flex-direction: column;
+    }
+
+    .print-section img{
+        max-width: 80%;
+        
+    }
+}
